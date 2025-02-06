@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mirano</title>
+
+		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" >
+		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" >
+		<link rel="shortcut icon" href="/favicon/favicon.ico" >
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" >
+		<link rel="manifest" href="/site.webmanifest" >
+
+		<script type="module" src="/index.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<form class="header__form" action="#">
+					<input class="header__input" type="search" name="search" placeholder="Букет из роз">
+
+					<button class="header__search-button">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M23.3333 14.1666C23.3333 14.785 23.9442 15.7083 24.5625 16.4833C25.3575 17.4833 26.3075 18.3558 27.3967 19.0216C28.2133 19.5208 29.2033 20 30 20M30 20C29.2033 20 28.2125 20.4791 27.3967 20.9783C26.3075 21.645 25.3575 22.5175 24.5625 23.5158C23.9442 24.2916 23.3333 25.2166 23.3333 25.8333M30 20H10" stroke="white"/>
+						</svg>
+					</button>
+				</form>
+
+				<img src="/img/logo.svg" alt="Логотип Mirano Flower Boutique" class="header__logo">
+
+				<button class="header__cart-button">0</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<div class="hero__head-group">
+						<h1 class="hero__title">Авторские букеты</h1>
+						<p class="hero__subtitle">и подарки</p>
+					</div>
+
+					<figure class="hero__group-image">
+						<img class="hero__image hero__image--left" src="/img/hero-left.jpg" alt="Букет цветов в банке. В букете ярко-оранжевые розы, оранжевые тюльпаны и львиный зев. Дополнительно в композицию включены белые цветы и зелёные элементы, придающие букету объём и разнообразие">
+
+						<svg class="hero__image hero__image--center" role="img" aria-label="Букет цветов в вазе, включающий нежные розовые розы, розовые хризантемы и другие цветы постельных цветов, размещённые в белой вазе в форме головы. " width="680" height="588" viewBox="0 0 680 588" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<clippath id="hero">
+								<path d="M680 112.187C680 137.954 653.568 161.688 609.146 180.61C653.568 211.682 680 250.658 680 292.973C680 335.869 652.836 375.335 607.304 406.613C652.836 425.66 680 449.692 680 475.813C680 537.649 527.777 587.776 340 587.776C152.223 587.776 0 537.649 0 475.813C0 449.692 27.1636 425.66 72.6961 406.613C27.1636 375.335 0 335.869 0 292.973C0 250.658 26.4319 211.682 70.854 180.61C26.4319 161.688 0 137.954 0 112.187C0 50.3515 152.223 0.223633 340 0.223633C527.777 0.223633 680 50.3515 680 112.187Z" >
+							</clippath>
+							<image xlink:href="/img/hero.jpg" width="100%" height="100%" clip-path="url(#hero)" />
+						</svg>
+
+						<img class="hero__image hero__image--right" src="/img/hero-right.jpg" alt="Букет цветов в коробке состоящий из крупных ярко-розовых роз и белых цветов зелени.">
+					</figure>
+				</div>
+			</section>
+
+			<section class="filter">
+				<div class="container filter__container">
+					<fieldset class="filter-group">
+						<input class="filter-radio" type="radio" name="flowers" id="item1" checked>
+						<label class="filter-label" for="item1">цветы</label>
+
+						<input class="filter-radio" type="radio" name="toys" id="item2">
+						<label class="filter-label" for="item2" >Игрушки</label>
+
+						<input class="filter-radio" type="radio" id="item3" name="postcards">
+						<label class="filter-label" for="item3">Открытки</label>
+					</fieldset>
+
+					<div class="filter-wrapper">
+						<div>
+							Цена
+
+							<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 0L7.4641 6H0.535898L4 0Z" fill="#2E3514"/>
+							</svg>
+						</div>
+
+						<div>
+							Тип товара
+
+							<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#2E3514"/>
+							</svg>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="subscribe">
+				<div class="container subscribe__container">
+					<h2 class="subscribe__title">Подпишись на рассылку</h2>
+
+					<form class="subscribe__form" action="#">
+						<input class="subscribe__input" type="email" name="emailto" placeholder="E-mail">
+
+						<button class="subscribe__email-button">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.1667 16.6667C14.785 16.6667 15.7084 16.0558 16.4834 15.4375C17.4834 14.6425 18.3559 13.6925 19.0217 12.6033C19.5209 11.7867 20 10.7967 20 10M20 10C20 10.7967 20.4792 11.7875 20.9784 12.6033C21.645 13.6925 22.5175 14.6425 23.5159 15.4375C24.2917 16.0558 25.2167 16.6667 25.8334 16.6667M20 10V30" stroke="white"/>
+							</svg>
+						</button>
+				</form>
+				</div>
+			</section>
+
+
+		</main>
+
+		<footer></footer>
+	</body>
+</html>

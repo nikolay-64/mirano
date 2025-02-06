@@ -1,0 +1,68 @@
+@use '../varibles' as *;
+
+.subscribe {
+	padding: 140px 0;
+
+	&__container {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-family: $second-family;
+		font-weight: 400;
+		font-size: clamp(
+			32px,
+			calc(32px + (18 * ((100vw - 768px) / (1440 - 768)))),
+			50px
+		);
+		line-height: 1.2;
+		text-transform: uppercase;
+		text-align: center;
+		color: $green;
+	}
+
+	&__form {
+		position: relative;
+		max-width: 524px;
+		width: 100%;
+		height: 40px;
+
+		justify-self: center;
+	}
+
+	&__input {
+		width: 100%;
+		height: 100%;
+		border-radius: 32px;
+		padding: 8px 56px 8px 16px;
+		border: none;
+
+		&::placeholder {
+			color: rgba($dark, 0.3);
+		}
+
+		&::-webkit-search-cancel-button {
+			display: none;
+		}
+	}
+
+	&__email-button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+
+		width: 40px;
+		height: 40px;
+
+		border-radius: 32px;
+		background-color: $light-orange;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
