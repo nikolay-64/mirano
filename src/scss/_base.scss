@@ -18,6 +18,10 @@
 	box-sizing: inherit;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	position: relative;
 	overflow-x: hidden;
@@ -66,6 +70,8 @@ ul {
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 figure,
 fieldset {

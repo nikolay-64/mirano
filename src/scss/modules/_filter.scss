@@ -84,6 +84,7 @@
 	}
 
 	&__choices {
+		position: relative;
 	}
 
 	&__select {
@@ -100,20 +101,31 @@
 	}
 
 	&__price {
-		border-radius: 12px;
-		background-color: $white;
-		border: none;
-		padding: 24px;
+		border: 0;
+		padding: 0;
+		margin: 0;
+
+		display: flex;
+		gap: 8px;
 	}
 
 	&__choices-box {
+		position: absolute;
+		top: calc(100% + 20px);
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $white;
+		padding: 24px;
+		border-radius: 12px;
 	}
 
 	&__input-price {
+		border-radius: 32px;
 		padding: 8px 16px;
-		border: none;
-		outline: none;
+		width: 110px;
+		height: 40px;
 		background-color: $bg;
+		border: none;
 
 		&::placeholder {
 			color: $dark;
@@ -132,11 +144,9 @@
 	}
 
 	&__type-button {
+		white-space: nowrap;
+		font-size: 14px;
 		transition: color 0.3s ease-in;
-
-		@include mobile {
-			font-size: 14px;
-		}
 
 		&:hover {
 			color: $orange;
