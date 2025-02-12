@@ -11,7 +11,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" >
 		<link rel="manifest" href="/site.webmanifest" >
 
-		<script type="module" src="/index.js"></script>
+		<script type="module" src="/src/index.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -84,7 +84,7 @@
 						<div class="filter__choices choices">
 							<button class="filter__select choices__btn">Тип товара</button>
 
-							<div class="choices__box filter__choices-box">
+							<div class="choices__box filter__choices-box filter__choices-box--type">
 								<ul class="filter__type-list">
 									<li class="filter__type-item">
 										<button class="filter__type-button">Монобукеты</button>
@@ -253,7 +253,7 @@
 
 									<div class="cart__counter">
 										<button class="cart__counter-btn">-</button>
-										<input class="cart__counter-input" type="number">
+										<input class="cart__counter-input" type="number" max="99" min="0">
 										<button class="cart__counter-btn">+</button>
 									</div>
 
@@ -267,7 +267,7 @@
 
 									<div class="cart__counter">
 										<button class="cart__counter-btn">-</button>
-										<input class="cart__counter-input" type="number">
+										<input class="cart__counter-input" type="number" max="99" min="0">
 										<button class="cart__counter-btn">+</button>
 									</div>
 
@@ -281,7 +281,7 @@
 
 									<div class="cart__counter">
 										<button class="cart__counter-btn">-</button>
-										<input class="cart__counter-input" type="number">
+										<input class="cart__counter-input" type="number" max="99" min="0">
 										<button class="cart__counter-btn">+</button>
 									</div>
 
